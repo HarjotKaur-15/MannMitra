@@ -2,11 +2,11 @@ from flask import Flask, render_template, request, jsonify, redirect
 from textblob import TextBlob
 import sqlite3
 from datetime import datetime
-from google import genai
+
 
 # CREATE FLASK APPLICATION
 app = Flask(__name__)
-client = genai.Client(api_key="AIzaSyCz0keb4BflpLvR_IDLDlWvdbofzAd40rw")
+
 
 
 # -----------------------------
