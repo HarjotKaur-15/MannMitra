@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breathing Exercise</title>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+    flex-direction: column;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #38bdf8;
+    animation: breathe 8s infinite;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Breathing Exercise</h1>
+
+<div class="circle"></div>
+
+<h2 id="text">Inhale... Hold... Exhale...</h2>
+
+</body>
+</html>
